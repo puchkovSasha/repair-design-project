@@ -1,0 +1,81 @@
+@import './_var'
+
+.container
+    max-width: 90%
+    margin: 0 auto
+body 
+    margin: 0
+    padding: 0
+h1
+    padding: 0
+    margin: 0
+.top
+    background-color: $bg-main
+    padding-top: 2%
+.button
+    display: inline-block
+    border: 0
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
+    border-radius: 2px
+    background-color: $accent-text-color
+    color: $text-color
+    outline: none
+    font-family: FuturaDemiC
+    font-size: 11px
+    line-height: 15px
+    text-align: center
+    text-transform: uppercase
+    padding: 7px 18px
+.header
+    display: flex
+    align-items: center
+   
+    width: 100%
+    // justify-content: space-between
+    &-nav
+        display: flex
+        flex-basis: 74%
+        justify-content: space-between
+        font-family: FuturaBookC
+        font-size: 11px
+        
+        &__item
+            margin-right: 4%
+            &:first-child>a
+                color: $accent-text-color
+            &:nth-child(7)
+                margin-right: 7%
+            &:last-child>a
+                color: $accent-text-color
+                border-bottom: 1px solid $accent-text-color
+                
+            &:last-child
+                
+                margin: 0
+            &_link
+                color: $text-color
+            
+    
+        
+    &-nav-wrapper
+        display: flex
+        align-items: center
+        list-style-type: none
+        padding: 0
+        margin: 0
+        color: $text-color
+        width: 100%
+    &-logo
+        width: 40%
+        font-family: FuturaDemiC
+        font-size: 11px
+        line-height: 16px
+        text-transform: uppercase
+        font-weight: 400
+        &__link
+            color: $accent-text-color
+
+    
+    a 
+        
+        text-decoration: none
