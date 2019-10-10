@@ -1,0 +1,71 @@
+.online-control
+    &-wrapper
+        background-color: $bg-main
+        padding-top: 90px
+        
+        color: $text-color
+    &-medium
+        &-wrapper
+            display: flex
+        &-left
+            flex-basis: 48%
+            margin-right: 40px
+            &__title
+               font-family: Yeseva One
+               margin-top: 170px 
+               margin-bottom: 34px
+               font-weight: 400
+               font-size: 27px
+               line-height: 46px
+               letter-spacing: -0.07em
+               text-transform: uppercase
+
+               color: $accent-text-color
+               position: relative
+               h2 
+                   padding: 0
+                   margin: 0
+
+               &::before
+                position: absolute
+                bottom: 23%
+                right: 17%
+                content: ''
+                display: block
+                height: 1px
+                width: 92px
+                background-color: $accent-text-color
+                z-index: 10
+            &__subtitle
+                font-family: FuturaBookC
+                font-size: 18px
+                line-height: 29px
+
+                font-weight: 400
+                margin-bottom: 42px
+            &-descr
+                display: flex
+                
+                flex-wrap: wrap
+                
+                &__item
+                    display: flex
+                    flex-direction: column
+                    font-family: FuturaBookC
+                    font-size: 15px
+                    line-height: 20px
+                    font-weight: 400
+                    color: $text-color
+                    margin-right: 34px
+                    margin-bottom: 34px
+                    &:first-child
+                        max-width: 120px
+                    span 
+                        font-family: Yeseva One
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 25px
+                        text-transform: uppercase
+
+                        color: $accent-text-color
+

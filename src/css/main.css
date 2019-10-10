@@ -102,6 +102,8 @@ h1 {
   justify-content: space-between;
   font-family: FuturaBookC;
   font-size: 14px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header-nav__item {
@@ -263,4 +265,98 @@ h1 {
 .header a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.online-control-wrapper {
+  background-color: #131313;
+  padding-top: 90px;
+  color: #ffffff;
+}
+
+.online-control-medium-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.online-control-medium-left {
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%;
+  margin-right: 40px;
+}
+
+.online-control-medium-left__title {
+  font-family: Yeseva One;
+  margin-top: 170px;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 46px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+  position: relative;
+}
+
+.online-control-medium-left__title h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.online-control-medium-left__title::before {
+  position: absolute;
+  bottom: 23%;
+  right: 17%;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 92px;
+  background-color: #E3B873;
+  z-index: 10;
+}
+
+.online-control-medium-left__subtitle {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
+
+.online-control-medium-left-descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.online-control-medium-left-descr__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-right: 34px;
+  margin-bottom: 34px;
+}
+
+.online-control-medium-left-descr__item:first-child {
+  max-width: 120px;
+}
+
+.online-control-medium-left-descr__item span {
+  font-family: Yeseva One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
 }
