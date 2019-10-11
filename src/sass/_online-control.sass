@@ -19,18 +19,18 @@
                line-height: 46px
                letter-spacing: -0.07em
                text-transform: uppercase
-
+               display: flex
                color: $accent-text-color
                position: relative
                h2 
                    padding: 0
                    margin: 0
 
-               &::before
-                position: absolute
+               &_line
+                
                 bottom: 23%
                 right: 17%
-                content: ''
+                position: absolute
                 display: block
                 height: 1px
                 width: 92px
@@ -68,4 +68,95 @@
                         text-transform: uppercase
 
                         color: $accent-text-color
+            &-arrows
+                display: flex
+                align-items: center
+                max-width: 252px
+                justify-content: space-between
+                &__item
+                    display: inline-block
+                    width: 10px
+                    height: 10px
+                    border-radius: 50%
+                    background-color: rgba($text-color, 0.3 )
+                    
+                   
+                    &:nth-child(2)
+                        background-color: $text-color
+                        
+                    &_left
+                        
+                        position: relative
+                        
+                        width: 41px
+                        height: 1.34px
+                        background-color: #fff
+                        
+                        left: 0
+                        display: block
+                        cursor: pointer
+                        
+                        &::after 
+                            content: ''
+                            position: absolute
+                            width: 8px
+                            height: 1.34px
+                            top: -3px
+                            left: 0
+                            background-color: #fff
+                            transform: rotate(-45deg)
+                            cursor: pointer
+                        
+                        &::before 
+                            content: ''
+                            position: absolute
+                            width: 8px
+                            height: 1.34px
+                            top: 3px
+                            left: 0
+                            background-color: #fff
+                            
+                            transform: rotate(45deg)
+                            cursor: pointer
+                    &_right
+                        
+                        position: relative
+                        
+                        width: 41px
+                        height: 1.34px
+                        background-color: #fff
+                        
+                        right: 0
+                        display: block
+                        cursor: pointer
+                        
+                        &::after 
+                            content: ''
+                            position: absolute
+                            width: 8px
+                            height: 1.34px
+                            top: -3px
+                            right: 0
+                            background-color: #fff
+                            transform: rotate(45deg)
+                            
+                        
+                        &::before 
+                            content: ''
+                            position: absolute
+                            width: 8px
+                            height: 1.34px
+                            top: 3px
+                            right: 0
+                            background-color: #fff
+                            
+                            transform: rotate(-45deg)
+                            
+                &-wrapper__item_left
+                    height: 40px
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+
+
 
