@@ -85,7 +85,13 @@ h1
         
         &__item
             margin-right: 4%
-            &:first-child>a
+            height: 100%
+            display: flex
+            align-items: center
+            &:active>a
+                color: $accent-text-color
+            &:hover>a
+                transition: 0.5s
                 color: $accent-text-color
             &:nth-child(7)
                 margin-right: 4%
