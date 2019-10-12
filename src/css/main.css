@@ -113,8 +113,6 @@ h1 {
   justify-content: space-between;
   font-family: FuturaBookC;
   font-size: 14px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .header-nav__item {
@@ -275,7 +273,9 @@ h1 {
 }
 
 .header-logo {
-  width: 38%;
+  -ms-flex-preferred-size: 35%;
+  flex-basis: 35%;
+  margin-right: 3%;
   font-family: FuturaDemiC;
   font-size: 14px;
   line-height: 16px;
