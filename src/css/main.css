@@ -920,9 +920,19 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .repair-medium-item {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;
+}
+
+.repair-medium-item img {
+  width: 100%;
   max-width: 392px;
 }
 
@@ -974,4 +984,207 @@ h2 {
   position: absolute;
   bottom: -30px;
   left: 0;
+}
+
+.steps-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.steps-left {
+  margin-top: 40px;
+}
+
+.steps-left-text__item {
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 21px;
+  position: relative;
+  color: #363636;
+  right: -391px;
+}
+
+.steps-left-text__item::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  background-color: #E3B873;
+  position: absolute;
+  bottom: 0%;
+  left: -15%;
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.steps-left-text__item:nth-child(1)::before {
+  content: '01';
+}
+
+.steps-left-text__item:nth-child(1) {
+  top: -575px;
+  max-width: 364px;
+}
+
+.steps-left-text__item:nth-child(4) {
+  max-width: 225px;
+}
+
+.steps-left-img {
+  z-index: 5;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/bf-for-circle.jpg");
+}
+
+.steps-left-img img {
+  z-index: 10;
+  height: 645px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.steps-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.steps-right-form {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 506px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #131313;
+  color: #ffffff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 28px 49px 60px 49px;
+}
+
+.steps-right-form__title {
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 39px;
+  color: #ffffff;
+}
+
+.steps-right-form__item_name {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+}
+
+.steps-right-form__item_name:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.steps-right-form__item_input input {
+  width: 100%;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 24px;
+  color: #363636;
+}
+
+.steps-right-form__item_input input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+}
+
+.steps-right-form__item_input input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.steps-right-form__item_input input::-moz-placeholder {
+  color: #fff;
+}
+
+.steps-right-form__item_input input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.steps-right-form__item_input input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.steps-right-form__item_input input::placeholder {
+  color: #fff;
+}
+
+.steps-right-form__subtitle {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.steps-right-form__button {
+  text-align: right;
+  font-size: 13px;
+}
+
+.steps-right-form__button input {
+  padding: 19px 22px;
+}
+
+.steps-right__descr {
+  margin-top: 35px;
+  margin-left: 5%;
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  max-width: 258px;
+  color: #E3B873;
+  position: relative;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.steps-right__descr::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background-color: #E3B873;
+  position: absolute;
+  bottom: -20%;
+  left: -35%;
+  background-image: url("../assets/img/logo-pig.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
