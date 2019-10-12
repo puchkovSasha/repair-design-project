@@ -1,5 +1,6 @@
 .bottom-title,
-.online-control-bottom-text {
+.online-control-bottom-text,
+.repair-top__title {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -298,7 +299,8 @@ h2 {
 }
 
 .bottom-title,
-.online-control-bottom-text {
+.online-control-bottom-text,
+.repair-top__title {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -862,4 +864,114 @@ h2 {
 
 .video-text-form__subtitle input:checked ~ label::after {
   display: block;
+}
+
+.repair-top {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.repair-top__title {
+  color: #181818;
+  margin-bottom: 10px;
+}
+
+.repair-top__logo {
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.repair-top__logo:after,
+.repair-top__logo:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.repair-top__logo:after {
+  bottom: 51%;
+  left: 183%;
+}
+
+.repair-top__logo:before {
+  right: 171%;
+  top: 45%;
+}
+
+.repair-medium-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.repair-medium-item {
+  max-width: 392px;
+}
+
+.repair-medium-text {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 330px;
+  padding: 25px 68px 41px 34px;
+  margin: 0 auto;
+  position: relative;
+  top: -130px;
+  z-index: 5;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.repair-medium-text__title {
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+
+.repair-medium-text__list {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+.repair-medium-text__list ul {
+  padding-left: 17px;
+}
+
+.repair-medium-text__prise {
+  font-family: YesevaOne;
+  background-color: #E3B873;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 21px 17px;
+  color: #ffffff;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }

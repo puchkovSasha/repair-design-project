@@ -1,0 +1,75 @@
+.repair
+    &-top 
+        margin-top: 140px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        &__title
+            @extend .bottom-title
+            color:  #181818
+            margin-bottom: 10px
+        &__logo
+            position: relative
+            margin-bottom: 31px
+            &:after, 
+            &:before
+                position: absolute
+                content: ''
+                display: block
+                height: 1px
+                width: 32px
+                background-color: $accent-text-color
+            &:after
+                bottom: 51%
+                left: 183%
+            &:before
+                right: 171%
+                top: 45%
+    &-medium
+        &-wrapper
+            display: flex
+            justify-content: space-between
+        &-item
+            max-width: 392px
+        &-text
+            box-sizing: border-box
+            max-width: 330px
+            padding: 25px 68px 41px 34px
+            margin: 0 auto
+            
+            position: relative
+            top: -130px
+            z-index: 5
+            background-color: #fff
+            box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
+            &__title
+                font-family: YesevaOne
+                
+                font-weight: 400
+                font-size: 18px
+                line-height: 25px
+
+                color: #363636
+            &__list
+                font-family: FuturaBookC
+                font-size: 15px
+                line-height: 25px
+
+                color: #959595
+                ul
+                    padding-left: 17px
+            &__prise
+                font-family: YesevaOne
+                background-color: $accent-text-color
+                font-weight: 400
+                font-size: 18px
+                line-height: 25px
+                text-transform: uppercase
+                display: inline-block
+                padding: 21px 17px
+                color: $text-color
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
+                position: absolute
+                bottom: -30px
+                left: 0
