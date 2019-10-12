@@ -130,31 +130,71 @@
     <section class="video-wrapper">
         <div class="container">
             <div class="video">
-                <video poster="./assets/img/video-placeholder.jpg" src="#">
+                <div class="video-wrapper-post">
+                    <video poster="./assets/img/video-placeholder.jpg" src="#">
                     
                     
-                </video>
+                    </video>
+                    <div class="video-wrapper-post__click">
+                        <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 13L7.65417e-07 25.1244L1.82536e-06 0.875644L21 13Z" fill="white"/>
+                            </svg>
+                            
+                    </div>
+                </div>
             </div>
             <div class="video-text">
                 <div class="video-text__line"></div>
-                <div class="video-text__descr"><h2>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</h2></div>
+                <div class="video-text__descr"><h2>
+                    <span class="video-text__descr_1">At each facility, a camera is installed that broadcasts the progress of work on the clock.</span>
+                    <span class="video-text__descr_2">At any time, you can go to our website and monitor the progress of work in your apartment.
+                    You can watch the live broadcast from one of our facilities! </span>
+                    <span class="video-text__descr_4">Leave a request below and you will receive a link to the broadcast.</span>      
+                    </h2></div>
             </div>
-            <form action="#" class="video-form">
-                <label for="Name">Name
-                    <input id="Name" type="text" placeholder="What is your name:">
-                </label>
-                
-                <label for="Phone">Phone
-                    <input id="Phone" type="tel" placeholder="Your phone number:">
-                </label>
+            <div class="video-text-form">
+                    <form action="#" class="video-text-form-wrapper">
+                            <div class="video-text-form__item">
+                                    <div class="video-text-form__item_name">
 
-                <input class="button " type="submit" value="SUBMIT">
-                <div class="video-form__subtitle">
-                        <input type="checkbox" class="checkbox" id="checkbox" />
-                        <label for="checkbox">I agree to the processing of personal data</label>
-                    
-                </div>
-            </form>
+                                        <div class="video-text-form__item_label">
+    
+                                            <label for="Name">Name
+                                                    
+                                            </label>
+                                         </div>
+                                            <div class="video-text-form__item_input">
+    
+                                                <input id="Name" type="text" placeholder="What is your name:">
+                                            </div>
+                                    </div>
+                                    <div class="video-text-form__item_name">
+
+                                        <div class="video-text-form__item_label">
+    
+                                            <label for="Phone">Phone
+                                                   
+                                            </label>
+                                        </div>
+                                            <div class="video-text-form__item_input">
+    
+                                                <input id="Phone" type="tel" placeholder="Your phone number:">
+                                            </div>
+                                    </div>
+                                    
+                        
+                                </div>
+                                <div class="video-text-form__button">
+                                    
+                                    <input class="button video-text-form__button_input " type="submit" value="SUBMIT">
+                                </div>
+                        </form>
+                                <div class="video-text-form__subtitle">
+                                        <input type="checkbox" class="checkbox" id="checkbox" />
+                                        <label for="checkbox">I agree to the processing of personal data</label>
+                                    
+                                </div>
+            </div>
         </div>
     </section>
     <section class="repair">
