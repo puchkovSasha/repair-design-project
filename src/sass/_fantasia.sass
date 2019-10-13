@@ -1,0 +1,78 @@
+.fantasia
+    &-wrapper
+        flex-basis: 100% 
+        background-image: url('../assets/img/bg-fantasia.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        max-height: 864px
+       
+        position: relative
+
+        z-index: -1
+        box-sizing: border-box
+        &::after
+            content: ''
+            display: block
+            background-color: #000
+            height: 100%
+            left: 0
+            opacity: 0.80
+            position: absolute
+            top: 0
+            width: 100%
+            z-index: -1
+
+    &-block
+        display: flex
+        z-index: 10
+    &-left
+        flex-basis: 76%
+        &-text 
+            padding-top: 123px
+            &__title
+                font-family: YesevaOne
+                font-weight: 400
+                
+
+                font-size: 27px
+                line-height: 47px
+                text-transform: uppercase
+
+                color: $accent-text-color  
+                margin-bottom: 43px
+            &__subtitle,
+            &__descr
+                font-family: ProximaNova
+                font-size: 20px
+                
+
+                color: $text-color
+            &__subtitle
+                color: $accent-text-color
+                border-bottom: 1px solid $accent-text-color
+                padding-bottom: 3px
+                margin-bottom: 23px
+                display: inline-block
+            &__descr
+                margin-bottom: 25px
+    &-right
+        img 
+            max-width: 100%
+            position: relative
+        img:nth-child(1),
+        img:nth-child(3)
+            margin-right: 5%
+        img:nth-child(1)
+            top: -42px
+        img:nth-child(2)
+            top: -399px
+        img:nth-child(3)
+            top: -275px
+        img:nth-child(4)
+            top: -365px
+            
+        
+
+
+        
