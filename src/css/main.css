@@ -1,6 +1,7 @@
 .bottom-title,
 .online-control-bottom-text,
-.repair-top__title {
+.repair-top__title,
+.design-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -300,7 +301,8 @@ h2 {
 
 .bottom-title,
 .online-control-bottom-text,
-.repair-top__title {
+.repair-top__title,
+.design-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -1317,4 +1319,103 @@ h2 {
 
 .fantasia-right img:nth-child(4) {
   top: -365px;
+}
+
+.design-top {
+  margin-top: 160px;
+  margin-bottom: 39px;
+  color: black;
+}
+
+.design-top__title {
+  margin-bottom: 12px;
+}
+
+.design-top__descr {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+.design-top__logo {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.design-top__logo:after,
+.design-top__logo:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.design-top__logo:after {
+  bottom: 50%;
+  right: 43.5%;
+}
+
+.design-top__logo:before {
+  right: 53%;
+  top: 45%;
+}
+
+.design-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.design-center-item__text {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 330px;
+  position: relative;
+  top: -136px;
+  background-color: #fff;
+  padding: 25px 29px 30px 34px;
+}
+
+.design-center-item__text_title {
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+  margin-bottom: 13px;
+}
+
+.design-center-item__text_subtitle {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #959595;
+}
+
+.design-center-item__text_subtitle:nth-last-child(2) {
+  margin-bottom: 29px;
+}
+
+.design-center-item__text_price {
+  position: absolute;
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  display: inline-block;
+  padding: 17px 72px 17px 33px;
+  left: 0;
 }

@@ -1,0 +1,76 @@
+.design
+    &-top
+        margin-top: 160px
+        margin-bottom: 39px
+        @extend .bottom-title
+        color: black
+        &__title
+            margin-bottom: 12px
+        &__descr
+            font-family: FuturaBookC
+            font-size: 20px
+            line-height: 27px
+            text-align: center
+
+            color: #363636
+        &__logo
+            position: relative
+            margin-bottom: 24px
+            &:after, 
+            &:before
+                position: absolute
+                content: ''
+                display: block
+                height: 2px
+                width: 32px
+                background-color: $accent-text-color
+            &:after
+                bottom: 50%
+                right: 43.5%
+            &:before
+                right: 53%
+                top: 45%
+    &-center
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            &__text
+                box-sizing: border-box
+                margin: 0 auto
+                max-width: 330px
+                position: relative
+                top: -136px
+                background-color: #fff
+                padding: 25px 29px 30px 34px
+                
+                &_title
+                    font-family: YesevaOne
+                    font-weight: 400
+
+                    font-size: 18px
+                    line-height: 25px
+
+                    color: #363636
+                    margin-bottom: 13px
+                &_subtitle
+                    font-family: FuturaBookC
+                    font-size: 15px
+                    margin-bottom: 14px
+
+                    color: #959595
+                    &:nth-last-child(2)
+                        margin-bottom: 29px
+                        
+                &_price
+                    position: absolute
+                    font-family: YesevaOne
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 25px
+                    text-transform: uppercase
+                    background-color: $accent-text-color
+                    color: $text-color
+                    display: inline-block
+                    padding: 17px 72px 17px 33px
+                    left: 0
