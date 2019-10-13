@@ -5,9 +5,11 @@
         margin-bottom: 100px
         justify-content: space-between
         align-items: center
+        flex-wrap: wrap
         
     &-left
         margin-top: 40px
+        
         
         &-text 
             &__item
@@ -16,7 +18,7 @@
                 line-height: 21px
                 position: relative
                 color: #363636
-                right: -391px
+                right: -72%
                 &::before
                     content: ''
                     display: block
@@ -39,13 +41,34 @@
                 &:nth-child(1)::before
                     
                     content: '01'
+                &:nth-child(2)::before
+                    bottom: -46%
+                    
+                    content: '02'
+                &:nth-child(3)::before
+                    bottom: -46%
+                    
+                    content: '03'
+                &:nth-child(4)::before
+                    left: -23%
+                    content: '04'
                         
                     
                     
                 &:nth-child(1)
-                    top: -575px
+                    top: -563px
+                    max-width: 364px
+                &:nth-child(2)
+                    top: -477px
+                    left: 94%
+                    max-width: 364px
+                &:nth-child(3)
+                    left: 100%
+                    top: -337px
                     max-width: 364px
                 &:nth-child(4)
+                    left: 85%
+                    top: -209px
                     max-width: 225px
                     
 
@@ -74,7 +97,9 @@
                 z-index: 10
                 
                 height: 645px
-                object-fit: cover
+                position: relative
+                left: -6%
+                top: 22px
                  
 
     &-right
