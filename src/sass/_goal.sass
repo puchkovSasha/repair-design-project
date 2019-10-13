@@ -1,0 +1,108 @@
+.goal
+    background-color: $bg-main
+    padding-top: 428px
+    padding-bottom: 428px
+    color: $text-color
+    position: relative
+    top: -578px 
+    z-index: -1
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &-left
+        flex-basis: 24%
+        &-steps
+            position: relative
+            &::after
+                position: absolute
+                right: 0
+                bottom: 18px
+                content: ''
+                height: 1px
+                background-color: $accent-text-color
+                display: block
+                width: 92px
+            
+
+            &__title
+                font-family: FuturaDemiC
+                font-size: 15px
+                line-height: 21px
+                text-transform: uppercase
+                margin-bottom: 18px
+            &__subtitle
+                font-family: YesevaOne
+                max-width: 215px
+                font-weight: 400
+                font-size: 27px
+                line-height: 37px
+                text-transform: uppercase
+                margin-bottom: 72px
+                color: $accent-text-color
+        &-text 
+            font-family: YesevaOne
+            font-weight: 400
+            font-size: 18px
+            &__number
+                margin-bottom: 10px
+                text-transform: uppercase
+                font-size: 15px
+                line-height: 23px
+            &__title
+                color: $accent-text-color
+                margin-bottom: 16px
+
+            &__descr
+                font-family: FuturaBookC
+                font-size: 15px
+                line-height: 25px
+
+                color: $text-color
+                &_span
+                    margin-top: 10px
+                    font-family: FuturaBookC
+                    font-size: 15px
+                    line-height: 25px
+
+                    color: $text-color
+                    margin-bottom: 61px
+    &-right
+        &-top 
+            display: flex
+            margin-bottom: 100px
+            flex-direction: column
+            position: relative
+            top: 96px
+            &-item
+                font-family: YesevaOne
+
+                font-size: 15px
+
+                text-transform: uppercase
+
+                color: rgba($text-color, 0.3 )
+                max-width: 139px
+                &_color
+                    color: $text-color
+                &_wide
+                    max-width: 146px
+                &_wide2
+                    max-width: 160px
+                    margin-left: 15px
+                &__title
+                    border-bottom: 1px solid rgba($text-color, 0.3 )
+                    display: inline-block
+                    padding-bottom: 4px
+                    margin-bottom: 11px
+                &__subtitle
+                    font-family: FuturaBookC
+                    margin-bottom: 40px
+
+
+            &-item-top-wrapper
+                display: flex
+                justify-content: space-between
+            &-item-bottom-wrapper
+                justify-content: space-between
+                display: flex
+            
