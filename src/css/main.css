@@ -1,7 +1,8 @@
 .bottom-title,
 .online-control-bottom-text,
 .repair-top__title,
-.design-top {
+.design-top,
+.team-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -302,7 +303,8 @@ h2 {
 .bottom-title,
 .online-control-bottom-text,
 .repair-top__title,
-.design-top {
+.design-top,
+.team-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -1423,7 +1425,7 @@ h2 {
 .goal {
   background-color: #131313;
   padding-top: 428px;
-  padding-bottom: 428px;
+  padding-bottom: 500px;
   color: #ffffff;
   position: relative;
   top: -578px;
@@ -1574,4 +1576,179 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.team {
+  margin-top: -980px;
+}
+
+.team-top {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.team-top__title {
+  margin-bottom: 12px;
+}
+
+.team-top__logo {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.team-top__logo:after,
+.team-top__logo:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.team-top__logo:after {
+  bottom: 17px;
+  right: 45px;
+}
+
+.team-top__logo:before {
+  right: -45px;
+  top: 18px;
+}
+
+.team-top__descr {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 532px;
+  color: #ffffff;
+  margin-bottom: 85px;
+}
+
+.team-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.team-center-line {
+  margin-bottom: 5px;
+  height: 2px;
+  width: 55px;
+  margin-top: 17px;
+  background-color: #E3B873;
+}
+
+.team-center-bottom {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.team-center-bottom p {
+  max-width: 555px;
+  margin: 0;
+  padding: 0;
+}
+
+.team-center-item {
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  text-align: center;
+  position: relative;
+}
+
+.team-center-item::after {
+  content: '';
+  display: inline-block;
+  background-color: #E3B873;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -35px;
+  left: 35px;
+  background-image: url("../assets/img/idea.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.team-center-item-text {
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  top: -30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 233px;
+  margin: 0 auto;
+  color: #181818;
+  background-color: #fff;
+}
+
+.team-center-item-text__title {
+  padding: 20px 18px 0px 18px;
+}
+
+.team-center-item-text__subtitle {
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #959595;
+  margin-bottom: 13px;
+}
+
+.team-center-item-text__descr {
+  font-family: YesevaOne;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #E3B873;
+  padding: 13px 15px;
+  border: 0;
 }
