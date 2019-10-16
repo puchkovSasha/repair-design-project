@@ -147,7 +147,7 @@ h2 {
 }
 
 .header-nav__item:nth-child(7) {
-  margin-right: 4%;
+  margin-right: 2%;
 }
 
 .header-nav__item:last-child > a {
@@ -1306,7 +1306,7 @@ h2 {
 
 .fantasia-right img:nth-child(1),
 .fantasia-right img:nth-child(3) {
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 .fantasia-right img:nth-child(1) {
@@ -1326,7 +1326,7 @@ h2 {
 }
 
 .design-top {
-  margin-top: 160px;
+  margin-top: 134px;
   margin-bottom: 39px;
   color: black;
 }
@@ -2132,4 +2132,11 @@ h2 {
 .map-img img {
   height: 100%;
   width: 100%;
+}
+
+.footer {
+  background-color: #131313;
+  height: 100%;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
