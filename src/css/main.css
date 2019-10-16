@@ -1934,3 +1934,89 @@ h2 {
   background-position: 50% 50%;
   margin-right: 11px;
 }
+
+.popup-text {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 65%;
+  height: 445px;
+  background-color: #131313;
+  margin: 0 auto;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.popup-text__title {
+  margin-top: 34px;
+  margin-bottom: 45px;
+  font-family: YesevaOne;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 64%;
+}
+
+.popup-form-group {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.popup-form__item_name {
+  margin-bottom: 0;
+}
+
+.popup-form__item_label {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 7px;
+}
+
+.popup-form__item_label input {
+  width: 135%;
+}
+
+.popup-form__subtitle {
+  margin-top: 46px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.popup-form__button {
+  text-align: center;
+}
+
+.popup-form__button input {
+  padding: 19px 54px;
+}
+
+.left {
+  margin-right: 11%;
+}
