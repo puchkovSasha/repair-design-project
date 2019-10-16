@@ -1,0 +1,139 @@
+.clients
+    margin-bottom: 150px
+    &-top 
+        @extend .bottom-title
+
+        justify-content: center
+        align-items: center
+        color: black
+        display: flex
+        flex-direction: column
+        &__title
+            margin-bottom: 19px
+        &__descr
+            font-family: FuturaBookC
+            font-size: 20px
+            line-height: 27px
+            text-align: center
+            max-width: 397px
+            color: #363636
+            text-transform: lowercase
+            margin-bottom: 39px
+        &__logo
+            position: relative
+            margin-bottom: 24px
+
+
+            &:after, 
+            &:before
+                position: absolute
+                content: ''
+                display: block
+                height: 2px
+                width: 32px
+                background-color: $accent-text-color
+                
+            &:after
+                bottom: 19px
+                right: 45px
+            &:before
+                right: -45px
+                top: 16px
+    &-center
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        &-item
+            flex-basis: 26% 
+            text-align: center
+            &__title
+                font-family: YesevaOne
+                font-weight: 400 
+
+                font-size: 18px
+                line-height: 23px
+                max-width: 216px
+                color: #181818  
+                margin-bottom: 39px  
+                margin-left: 91px
+                text-align: left
+                position: relative
+                &::before
+                    content: ''
+                    width: 76px
+                    height: 76px
+                    display: inline-block
+                    background-image: url('../assets/img/maria-ava.jpg')
+                    border-radius: 50%
+                    background-position: 50% 50%
+                    position: absolute
+                    top: -15px
+
+                    left: -44%
+            &:nth-child(2)> .clients-center-item__title::before
+                
+                background-image: url('../assets/img/sergey-ava.jpg')
+            &:nth-child(3)> .clients-center-item__title::before
+                
+                background-image: url('../assets/img/egor-ava.jpg')
+                    
+            &__descr
+                font-family: FuturaBookC
+                font-size: 15px
+                line-height: 27px
+                text-align: left
+
+
+                color: #959595
+                margin-bottom: 58px
+                p 
+                    padding: 0
+                    margin: 0
+            &__result
+                
+                font-family: YesevaOne
+                font-weight: 400
+                font-size: 17px
+                line-height: 24px
+                text-transform: uppercase
+                position: absolute
+                color: $text-color 
+                margin-left: -19px      
+                &_square
+                    background-color: $accent-text-color
+                    padding: 7px 17px 10px 17px
+                    display: inline-block
+                    border: 0
+                    margin-right: -3px
+                    &::before
+                        content: ''
+                        width: 34px
+                        height: 34px
+                        display: inline-block
+                        background-image: url('../assets/img/Logo-XY.png')
+                        vertical-align: middle
+                        background-repeat: no-repeat
+                        background-position: 50% 50%
+                        margin-right: 11px
+                &_day
+                    padding: 7px 20px 10px 17px
+                    display: inline-block
+                    border: 0
+                    
+                    &::before
+                        content: ''
+                        width: 34px
+                        height: 34px
+                        display: inline-block
+                        background-image: url('../assets/img/Logo-XY.png')
+                        vertical-align: middle
+                        background-repeat: no-repeat
+                        background-position: 50% 50%
+                        margin-right: 11px
+                    border: 0
+                    
+                    background-color: $accent-text-color
+                    
+                    
+                 

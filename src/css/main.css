@@ -2,7 +2,8 @@
 .online-control-bottom-text,
 .repair-top__title,
 .design-top,
-.team-top {
+.team-top,
+.clients-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -304,7 +305,8 @@ h2 {
 .online-control-bottom-text,
 .repair-top__title,
 .design-top,
-.team-top {
+.team-top,
+.clients-top {
   font-family: YesevaOne;
   font-weight: 400;
   font-size: 20px;
@@ -1751,4 +1753,184 @@ h2 {
   background-color: #E3B873;
   padding: 13px 15px;
   border: 0;
+}
+
+.clients {
+  margin-bottom: 150px;
+}
+
+.clients-top {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.clients-top__title {
+  margin-bottom: 19px;
+}
+
+.clients-top__descr {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 397px;
+  color: #363636;
+  text-transform: lowercase;
+  margin-bottom: 39px;
+}
+
+.clients-top__logo {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.clients-top__logo:after,
+.clients-top__logo:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.clients-top__logo:after {
+  bottom: 19px;
+  right: 45px;
+}
+
+.clients-top__logo:before {
+  right: -45px;
+  top: 16px;
+}
+
+.clients-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clients-center-item {
+  -ms-flex-preferred-size: 26%;
+  flex-basis: 26%;
+  text-align: center;
+}
+
+.clients-center-item__title {
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 216px;
+  color: #181818;
+  margin-bottom: 39px;
+  margin-left: 91px;
+  text-align: left;
+  position: relative;
+}
+
+.clients-center-item__title::before {
+  content: '';
+  width: 76px;
+  height: 76px;
+  display: inline-block;
+  background-image: url("../assets/img/maria-ava.jpg");
+  border-radius: 50%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: -15px;
+  left: -44%;
+}
+
+.clients-center-item:nth-child(2) > .clients-center-item__title::before {
+  background-image: url("../assets/img/sergey-ava.jpg");
+}
+
+.clients-center-item:nth-child(3) > .clients-center-item__title::before {
+  background-image: url("../assets/img/egor-ava.jpg");
+}
+
+.clients-center-item__descr {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: left;
+  color: #959595;
+  margin-bottom: 58px;
+}
+
+.clients-center-item__descr p {
+  padding: 0;
+  margin: 0;
+}
+
+.clients-center-item__result {
+  font-family: YesevaOne;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+  margin-left: -19px;
+}
+
+.clients-center-item__result_square {
+  background-color: #E3B873;
+  padding: 7px 17px 10px 17px;
+  display: inline-block;
+  border: 0;
+  margin-right: -3px;
+}
+
+.clients-center-item__result_square::before {
+  content: '';
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("../assets/img/Logo-XY.png");
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 11px;
+}
+
+.clients-center-item__result_day {
+  padding: 7px 20px 10px 17px;
+  display: inline-block;
+  border: 0;
+  border: 0;
+  background-color: #E3B873;
+}
+
+.clients-center-item__result_day::before {
+  content: '';
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-image: url("../assets/img/Logo-XY.png");
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 11px;
 }
