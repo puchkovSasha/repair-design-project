@@ -1935,6 +1935,11 @@ h2 {
   margin-right: 11px;
 }
 
+.popup {
+  position: relative;
+  z-index: 50;
+}
+
 .popup-text {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2019,4 +2024,112 @@ h2 {
 
 .left {
   margin-right: 11%;
+}
+
+.map {
+  margin-top: -232px;
+  background-image: url("../assets/img/bg-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 953px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.map::after {
+  content: '';
+  display: block;
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.60;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -20;
+}
+
+.map-wrapper {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.map-top {
+  margin-bottom: 26px;
+}
+
+.map-top__title {
+  font-family: YesevaOne;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+  padding-top: 274px;
+  margin-bottom: -10px;
+}
+
+.map-top__title h2 {
+  max-width: 811px;
+}
+
+.map-top__title a {
+  text-decoration: none;
+  color: #E3B873;
+  cursor: pointer;
+}
+
+.map-top__social {
+  margin-bottom: 30px;
+}
+
+.map-top__email,
+.map-top__instagram {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  display: inline-block;
+  position: relative;
+}
+
+.map-top__email img,
+.map-top__instagram img {
+  position: absolute;
+  cursor: pointer;
+  left: calc(50% - (17px/2));
+  top: calc(50% - (13px/2));
+}
+
+.map-top__instagram {
+  margin-left: 15px;
+}
+
+.map-top__instagram img {
+  left: calc(50% - (15px/2));
+  top: calc(50% - (15px/2));
+}
+
+.map-img {
+  height: 459px;
+}
+
+.map-img img {
+  height: 100%;
+  width: 100%;
 }
