@@ -279,6 +279,9 @@ h2 {
   margin: 0;
   color: #ffffff;
   width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .header-logo {
@@ -302,6 +305,10 @@ h2 {
 }
 
 @media screen and (max-width: 1365px) {
+  .header-logo h1 {
+    font-size: 12px;
+  }
+
   .header-nav,
   .header-logo {
     font-size: 12px;
@@ -315,9 +322,16 @@ h2 {
 
 @media screen and (max-width: 1160px) {
   .header-logo {
-    font-size: 10px;
+    font-size: 12px;
     -ms-flex-preferred-size: 31%;
     flex-basis: 31%;
+  }
+}
+
+@media screen and (max-width: 1094px) {
+  .header-logo {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
   }
 }
 
@@ -383,6 +397,38 @@ h2 {
 }
 
 @media screen and (max-width: 685px) {
+  .header-scroll {
+    display: none;
+  }
+
+  .header-medium-left {
+    display: none;
+  }
+
+  .header-medium-right {
+    height: 476px;
+  }
+
+  .header-medium-right-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 0px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: none;
+  }
+
+  .header-medium-right-text__title {
+    margin-top: -62px;
+    font-size: 23px;
+  }
+
   .header-logo {
     -ms-flex-preferred-size: 67%;
     flex-basis: 67%;
@@ -394,6 +440,22 @@ h2 {
   .header-nav__item:nth-child(1),
   .header-nav__item:nth-child(5) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header-medium-right-text__title {
+    margin-left: 12px;
+    max-width: 339px;
+    line-height: 132.83%;
+  }
+
+  .header-medium-right-text__subtitle {
+    max-width: 310px;
+    margin-left: -4%;
+    font-size: 18px;
+    line-height: 135.84%;
+    margin-bottom: 32px;
   }
 }
 
@@ -415,6 +477,38 @@ h2 {
   .header-nav__item:nth-child(5),
   .header-nav__item:nth-child(2) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header-medium-right-text__title {
+    margin-top: 17px;
+  }
+
+  .header-medium-right-text__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-size: 13px;
+    width: 326px;
+  }
+
+  .header-medium-right-text__form input {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .button-medium {
+    border-radius: 0;
   }
 }
 

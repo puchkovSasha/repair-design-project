@@ -197,6 +197,7 @@ h2
         margin: 0
         color: $text-color
         width: 100%
+        justify-content: flex-end
     &-logo
         flex-basis: 35%
         margin-right: 3%
@@ -216,6 +217,10 @@ h2
 
 @media screen and ( max-width: 1365px )
     .header
+        &-logo
+            h1
+                font-size: 12px
+    .header
         &-nav,
         &-logo
             font-size: 12px
@@ -226,8 +231,14 @@ h2
 @media screen and ( max-width: 1160px )
     .header
         &-logo
-            font-size: 10px
+            font-size: 12px
             flex-basis: 31%
+@media screen and ( max-width: 1094px )
+    .header
+        
+        &-logo
+            flex-basis: 30%
+    
 @media screen and ( max-width: 1084px )
     .header
         &-logo
@@ -254,6 +265,7 @@ h2
                 justify-content: flex-end
             &__item
                 margin-right: 1%
+            
 
     .button-header
         display: none
@@ -273,6 +285,24 @@ h2
                     display: none
 @media screen and ( max-width: 685px )
     .header
+        &-scroll
+            display: none
+        &-medium
+            &-left
+                display: none
+            &-right
+                height: 476px
+                &-text 
+                    display: flex
+                    flex-direction: column
+                    margin-left: 0px
+                    align-items: center
+                    max-width: none
+
+                    &__title
+                        margin-top: -62px
+                        font-size: 23px
+                        
         &-logo
             flex-basis: 67%
 
@@ -285,6 +315,27 @@ h2
                 &:nth-child(5)
                 
                     display: none
+@media screen and ( max-width: 610px )
+    .header
+        
+        &-medium
+           
+            &-right
+                
+                &-text 
+                    
+
+                    &__title
+                        margin-left: 12px
+                        max-width: 339px
+                        line-height: 132.83%
+                    &__subtitle
+                        max-width: 310px
+                        margin-left: -4%
+                        font-size: 18px
+                        line-height: 135.84%
+                        margin-bottom: 32px
+
         
 @media screen and ( max-width: 570px )
     .header
@@ -303,6 +354,25 @@ h2
                 &:nth-child(2)
                 
                     display: none
+@media screen and ( max-width: 490px  )
+    
+    .header-medium
+        &-right-text
+            &__title
+                margin-top: 17px
+            &__form
+                display: flex
+                margin-right: 0
+                flex-direction: column
+                align-items: flex-start
+                font-size: 13px
+                width: 326px
+                input
+                    margin-right: 0
+                    width: 100%
+                    margin-bottom: 26px
+    .button-medium
+        border-radius: 0
 @media screen and ( max-width: 420px )
     .header
         padding-top: 24px
