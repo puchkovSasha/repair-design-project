@@ -213,4 +213,108 @@ h2
     a 
         
         text-decoration: none
+
+@media screen and ( max-width: 1365px )
+    .header
+        &-nav,
+        &-logo
+            font-size: 12px
+    .button-header
+        font-size: 12px
+        padding: 10px 15px
+
+@media screen and ( max-width: 1160px )
+    .header
+        &-logo
+            font-size: 10px
+            flex-basis: 31%
+@media screen and ( max-width: 1084px )
+    .header
+        &-logo
+            h1
+                font-size: 12px
+        &-nav
+            &__item
+                margin-right: 2%
+        &-nav
+            &-wrapper
+                justify-content: flex-end
+@media screen and ( max-width: 950px )
+    .top
+        padding-top: 0
+    .header
+        padding-top: 20px
+        padding-bottom: 20px
+        margin-bottom: 0
+        &-logo
+            flex-basis: 32%
+            margin-right: 0
+        &-nav
+            &-wrapper
+                justify-content: flex-end
+            &__item
+                margin-right: 1%
+
+    .button-header
+        display: none
+@media screen and ( max-width: 895px )
+    
+    .header
+        
+        &-logo
+            flex-basis: 50%
+
+        &-nav
+            &__item
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(6)
+                
+                    display: none
+@media screen and ( max-width: 685px )
+    .header
+        &-logo
+            flex-basis: 67%
+
+        &-nav
+            &__item
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(1),
+                &:nth-child(5)
+                
+                    display: none
+        
+@media screen and ( max-width: 570px )
+    .header
+        &-logo
+            flex-basis: 57%
+        &-nav
+            flex-basis: 44%
+
+        &-nav
+            &__item
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(1),
+                &:nth-child(5),
+                &:nth-child(2)
+                
+                    display: none
+@media screen and ( max-width: 420px )
+    .header
+        padding-top: 24px
+        &-logo
+            flex-basis: 57%
+        &-nav
+            flex-basis: 44%
+
+        &-nav
+            &__item
+               
+                &:nth-child(7)
+                
+                    display: none
         
