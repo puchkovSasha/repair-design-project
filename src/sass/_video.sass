@@ -136,4 +136,90 @@
                     visibility: hidden 
                 input:checked ~ label::after
                     display: block
-                        
+
+
+
+
+@media screen and ( max-width: 675px )
+    .video-text__descr
+        font-size: 14px
+        h2
+            span
+                width: 513px
+    .video-text-form-wrapper
+        flex-direction: column
+        
+    .video-text-form__item
+        margin-bottom: 40px
+    .video-text-form__item_name:nth-child(2)
+        margin-right: 0
+    .video-text-form
+        margin-top: -50px
+@media screen and ( max-width: 505px  )
+    .video-text__descr
+        h2
+            span
+                width: 414px
+@media screen and ( max-width: 420px )
+    .video-wrapper
+        background: $bg-main
+    .video-text-form__item_label
+        color: rgba(255, 255, 255, 0.5)
+        margin-bottom: 7px
+    .video-text-form__item
+        flex-direction: column
+        width: 100%
+    .video-text-form
+        align-items: flex-start
+        &-wrapper
+            width: 100%
+            margin-bottom: -50px
+    .video-text-form__item_input
+        input
+            background-color: $bg-main
+            border-bottom: 1px solid $text-color
+            padding-bottom: 2px
+            color: $text-color
+            width: 100%
+            &::placeholder
+
+                            color: white
+
+    .video-text-form__item_name
+        margin-right: 0
+        margin-bottom: 63px
+        width: 100%
+        &:last-child
+            margin-bottom: 10px
+    .video-text__descr
+        h2
+            color: $text-color
+            span
+                width: 367px
+    .video-text-form__subtitle
+        color: $text-color
+    .video-text-form__subtitle
+        font-size: 16px
+
+        transform: translate(9px, -44px)
+@media screen and ( max-width:  375px  )
+    .video-wrapper
+        padding-bottom: -10px
+    .video-text-form__subtitle
+        font-size: 16px
+
+        transform: translate(9px, -92px)
+    .video-text__descr
+        line-height: 194.8%
+        h2
+            span
+                width: 345px
+    .video-text__descr> h2> .video-text__descr_1
+        width: 345px
+        letter-spacing: 2px
+    .video-text-form__button
+        margin-top: 62px
+        width: 100%
+        font-size: 15px
+        input
+            width: 100%
