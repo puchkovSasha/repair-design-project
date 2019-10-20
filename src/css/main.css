@@ -1649,7 +1649,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 765px) {
   .repair-medium-item {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1669,6 +1669,10 @@ h2 {
     font-size: 22px;
   }
 
+  .repair-medium-text {
+    margin-top: 60px;
+  }
+
   .repair-medium-text__title {
     font-size: 15px;
   }
@@ -1679,6 +1683,17 @@ h2 {
 
   .repair-medium-text__prise {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .repair-medium-text {
+    margin-top: 0;
+  }
+
+  .repair-medium-item {
+    -ms-flex-preferred-size: 99%;
+    flex-basis: 99%;
   }
 }
 
