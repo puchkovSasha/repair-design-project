@@ -118,7 +118,7 @@
                     font-size: 15px
                     line-height: 20px
                     margin: 0
-                    color: rgba($text-color, 0.5)
+                    color: rgba($text-color, 0.7)
                     margin-bottom: 40px
                     &:nth-child(3)
                         
@@ -172,3 +172,41 @@
                 background-image: url('../assets/img/logo-pig.png')
                 background-position: 50% 50%
                 background-repeat: no-repeat
+
+
+
+@media screen and ( max-width:  1380px )
+    .steps-right
+        flex-basis: 30%
+@media screen and ( max-width:  1184px )
+    .steps-right
+        flex-basis: 100%
+        &-form
+            max-width: 700px
+    .steps-left
+        flex-basis: 100%
+    .steps-left-text__item
+        left: 34%
+
+    .steps-left-text__item:nth-child(2)
+        left: 42%
+    .steps-left-text__item:nth-child(3)
+        left: 44%
+    .steps-left-text__item:nth-child(4)
+        left: 37%
+@media screen and ( max-width: 892px )
+    .steps-left-text__item
+        left: 47%
+
+    .steps-left-text__item:nth-child(2)
+        left: 62%
+    .steps-left-text__item:nth-child(1)
+        max-width: 326px
+       
+    .steps-left-text__item:nth-child(3)
+        left: 64%
+    .steps-left-text__item:nth-child(4)
+        left: 50%
+@media screen and ( max-width: 560px  )
+    .steps
+        display: none
