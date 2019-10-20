@@ -2104,6 +2104,157 @@ h2 {
   top: -365px;
 }
 
+.fantasia-click {
+  display: none;
+}
+
+.fantasia-mob {
+  display: none;
+}
+
+@media screen and (max-width: 1360px) {
+  .fantasia-right {
+    -ms-flex-preferred-size: 162%;
+    flex-basis: 162%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .fantasia-click {
+    display: block;
+  }
+
+  .fantasia-click2 {
+    bottom: 47.5%;
+  }
+
+  .fantasia-left {
+    -ms-flex-preferred-size: 73%;
+    flex-basis: 73%;
+    margin-right: 40px;
+  }
+
+  .fantasia-right {
+    position: relative;
+  }
+
+  .fantasia-right img:nth-child(1),
+  .fantasia-right img:nth-child(3) {
+    margin-right: 0;
+    top: 135px;
+    width: 100%;
+    max-height: 652px;
+  }
+
+  .fantasia-right img:nth-child(2),
+  .fantasia-right img:nth-child(3),
+  .fantasia-right img:nth-child(4) {
+    display: none;
+  }
+
+  .fantasia-left-text__title {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fantasia-left-text__subtitle,
+  .fantasia-left-text__descr {
+    display: none;
+  }
+
+  .fantasia-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .fantasia-right {
+    top: -120px;
+  }
+
+  .fantasia-left {
+    margin-right: 0;
+    margin-top: -50px;
+  }
+
+  .fantasia-right img:nth-child(1) {
+    height: 590px;
+  }
+
+  .fantasia-click2 {
+    bottom: 42.2%;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .fantasia-click {
+    left: 85%;
+  }
+
+  .fantasia-click2 {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .fantasia-click {
+    bottom: 265px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fantasia-click {
+    bottom: 265px;
+  }
+
+  .fantasia-click2 {
+    left: 5%;
+  }
+
+  .fantasia-wrapper {
+    background-image: none;
+    background-color: #131313;
+  }
+
+  .fantasia-wrapper::after {
+    display: none;
+  }
+
+  .fantasia-right img:nth-child(1) {
+    display: none;
+  }
+
+  .fantasia-mob {
+    display: block;
+  }
+
+  .fantasia {
+    padding-top: 217px;
+  }
+
+  .fantasia-left {
+    margin-top: -353px;
+    line-height: 138.6%;
+  }
+
+  .fantasia-left-text__title {
+    font-size: 21px;
+    margin-bottom: 143px;
+  }
+
+  .fantasia-block {
+    height: 240px;
+  }
+
+  .pos-top {
+    position: relative;
+    top: 124px;
+  }
+}
+
 .design-top {
   margin-top: 134px;
   margin-bottom: 39px;
