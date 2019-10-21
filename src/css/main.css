@@ -2256,7 +2256,7 @@ h2 {
 }
 
 .design-top {
-  margin-top: 134px;
+  margin-top: 100px;
   margin-bottom: 39px;
   color: black;
 }
@@ -2369,6 +2369,11 @@ h2 {
 }
 
 @media screen and (max-width: 1365px) {
+  .design-center-item__text {
+    -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  }
+
   .design-center {
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -2385,7 +2390,7 @@ h2 {
   }
 
   .design-top {
-    margin-top: 53px;
+    margin-top: 100px;
   }
 }
 
@@ -2718,6 +2723,43 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1365px) {
+  .goal {
+    margin-top: 495px;
+    padding-top: 84px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .goal-left {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    margin-right: 5%;
+  }
+
+  .goal-arrows {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .goal-left-steps::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .goal-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .goal {
+    display: none;
+  }
 }
 
 .team {
