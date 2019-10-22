@@ -71,15 +71,17 @@
                 content: ''
                 display: inline-block
                 background-color: $accent-text-color
-                box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5) 
+                
                 width: 70px
                 height: 70px
-                position: absolute
-                top: -35px
-                left: 35px
+                position: relative
+                top: -524px
+                left: -135px
                 background-image: url('../assets/img/idea.png')
                 background-repeat: no-repeat
                 background-position: 50% 50%
+                box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
+
             &-text 
                 font-family: YesevaOne
                 font-weight: 400
@@ -122,4 +124,67 @@
                     border: 0
                     
                             
-            
+@media screen and ( max-width: 1100px  )
+    .team-center-item
+        flex-basis: 50%
+        
+@media screen and ( max-width: 701px  )
+    .team
+        background-color: $bg-main
+    .team-top__title
+        font-size: 22px
+    .team-top__descr
+        font-size: 18px
+    .team-center-item
+        flex-basis: 100%
+        &::after
+            top: -5%
+            left: 9%
+            position: absolute
+    .team-center-item__img
+        img
+            width: 70%
+    .team-center-item-text
+        max-width: 330px
+        margin-bottom: 50px
+@media screen and ( max-width: 580px )
+    .team-center-item-text
+        max-width: 270px
+@media screen and ( max-width: 520px )
+    .team-center-item-text
+        max-width: 270px
+    .team-center-item
+        flex-basis: 100%
+        &::after
+  
+            left: 7%
+@media screen and ( max-width: 460px )
+    .team-center-item-text
+        max-width: 240px
+    .team-center-item__img
+        img
+            width: 80%
+    
+    .team-center-item
+
+        &::after
+  
+            left: 2%
+@media screen and ( max-width: 420px )
+    .team-center-item-text
+        max-width: 233px
+    
+@media screen and ( max-width: 400px )
+    .team
+        margin-top: 0
+@media screen and ( max-width: 375px )
+    .team
+        margin-top: 0
+    
+    .team-center-item
+
+        &::after
+  
+            left: 1%
+
+    
