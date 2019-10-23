@@ -136,4 +136,43 @@
                     background-color: $accent-text-color
                     
                     
-                 
+@media screen and ( max-width: 1200px )
+    .clients-center-item
+        flex-basis: 29%
+@media screen and ( max-width: 1100px )
+    .clients-center-item
+        flex-basis: 31%
+@media screen and ( max-width: 975px )
+    .clients-center-item
+        flex-basis: 29%
+    .clients-center-item__title::before
+        left: -60%
+@media screen and ( max-width: 975px )
+    .clients-center-item
+        flex-basis: 45%
+    .clients-center-item:last-child
+        margin-top: 130px
+        
+    .clients-center-item__title::before
+        left: -40%
+    .clients-center
+        justify-content: space-around
+    .clients-top__descr
+        margin-bottom: 70px
+    .clients-center-item__result
+        margin-left: 3px
+        
+@media screen and ( max-width: 740px )
+    .clients-center-item
+        flex-basis: 100%
+    .clients-center
+        justify-content: center
+    
+    .clients-center-item:nth-child(2)
+        margin-top: 120px
+@media screen and ( max-width: 701px  )
+    .clients
+        margin-top: 60px
+@media screen and ( max-width: 375px  )
+    .clients
+        display: none
