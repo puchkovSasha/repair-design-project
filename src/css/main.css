@@ -2957,7 +2957,7 @@ h2 {
 @media screen and (max-width: 701px) {
   .team {
     background-color: #131313;
-    margin-top: -5px;
+    padding-bottom: 1px;
   }
 
   .team-center-bottom {
@@ -3031,6 +3031,12 @@ h2 {
 @media screen and (max-width: 420px) {
   .team-center-item-text {
     max-width: 233px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .team {
+    margin-top: -2px;
   }
 }
 
@@ -3223,6 +3229,88 @@ h2 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-right: 11px;
+}
+
+@media screen and (max-width: 1200px) {
+  .clients-center-item {
+    -ms-flex-preferred-size: 29%;
+    flex-basis: 29%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .clients-center-item {
+    -ms-flex-preferred-size: 31%;
+    flex-basis: 31%;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .clients-center-item {
+    -ms-flex-preferred-size: 29%;
+    flex-basis: 29%;
+  }
+
+  .clients-center-item__title::before {
+    left: -60%;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .clients-center-item {
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%;
+  }
+
+  .clients-center-item:last-child {
+    margin-top: 130px;
+  }
+
+  .clients-center-item__title::before {
+    left: -40%;
+  }
+
+  .clients-center {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .clients-top__descr {
+    margin-bottom: 70px;
+  }
+
+  .clients-center-item__result {
+    margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .clients-center-item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .clients-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .clients-center-item:nth-child(2) {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .clients {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clients {
+    display: none;
+  }
 }
 
 .popup {
