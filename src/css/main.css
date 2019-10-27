@@ -3406,6 +3406,35 @@ h2 {
   margin-right: 11%;
 }
 
+@media screen and (max-width: 1262px) {
+  .popup-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .popup-form__item_label:nth-child(2) {
+    margin-bottom: 28px;
+  }
+
+  .popup-form__item_name_top {
+    margin-top: -35px;
+  }
+
+  .popup-text__title {
+    margin-bottom: 29px;
+  }
+
+  .popup-form__subtitle {
+    margin-top: 20px;
+    margin-bottom: 13px;
+  }
+
+  .popup-form__item_label input {
+    width: 100%;
+  }
+}
+
 .map {
   margin-top: -232px;
   background-image: url("../assets/img/bg-map.png");
