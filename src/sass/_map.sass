@@ -54,7 +54,9 @@
                 color: $accent-text-color
                 cursor: pointer
         &__social
-            margin-bottom: 30px
+            margin-bottom: 5px
+            text-align: center
+            margin-top: 20px
         &__email, 
         &__instagram
             
@@ -76,7 +78,48 @@
                 top: calc(50% - (15px/2))
                 
     &-img
-        height: 459px
+        max-height: 459px
         img 
             height: 100%  
             width: 100%
+
+
+@media screen and ( max-width: 760px  )
+    .map
+        height: 860px
+    
+@media screen and ( max-width: 500px  )
+    .map-top__title
+        font-size: 18px
+    .map
+        height: 760px
+@media screen and ( max-width: 450px  )
+    .map
+        background-color: $bg-main
+        background-image: none
+        position: relative
+        top: -45px
+        &::after
+            display: none
+
+        &-top 
+            position: relative
+            top: 215px
+        &-img
+            position: relative
+            top: -290px
+
+@media screen and ( max-width: 390px )
+    
+    .map-top__title
+        padding-top: 274px
+@media screen and ( max-width: 375px )
+    .map-top__title
+        padding-top: 362px
+    
+    .map-top__title
+        font-size: 13px
+    .map-top
+        top: 130px
+    .map
+        height: 700px
