@@ -57,6 +57,15 @@ h2 {
   cursor: pointer;
 }
 
+.button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .button-medium {
   padding: 19px 41px;
   margin-right: 20px;
