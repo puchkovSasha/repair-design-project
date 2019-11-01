@@ -1,4 +1,4 @@
-# Click for me [repair-design-project](https://puchkovsasha.github.io/repair-design-project.github.io/src/index.html)
+# Click me [repair-design-project](https://puchkovsasha.github.io/repair-design-project.github.io/src/index.html)
 
 ## Prepare 
 
