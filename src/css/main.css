@@ -3708,6 +3708,10 @@ h2 {
   .map {
     height: 700px;
   }
+
+  .online-control-medium-right-img img:nth-child(3) {
+    top: -245px;
+  }
 }
 
 .footer {
